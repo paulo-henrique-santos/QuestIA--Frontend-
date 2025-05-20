@@ -21,7 +21,7 @@
   </nav>
 
   <!-- Conteúdo principal -->
-  <main class="flex-grow bg-cover bg-center pt-24" style="background-image: url('backgroundimage.jpg'); height: calc(100vh - 80px - 64px);">
+  <main class="flex-1 bg-cover bg-center pt-24" style="background-image: url('backgroundimage.jpg'); height: calc(100vh - 80px - 64px);">
     <div class="container max-w-4xl mx-auto text-center p-4">
       <!-- TÍTULO -->
 
@@ -34,14 +34,15 @@
         <div id="temas" class="space-y-3 mb-4">
           <!-- Linhas de tema iniciais -->
           <div class="tema-row flex items-center space-x-2">
-            <input type="text" class="tema tema-input flex-1 p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700" placeholder="Informe um tema de jogo..."/>
+            <input type="text" id="temas1" class="tema tema-input flex-1 p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700" placeholder="Informe um tema de jogo..."/>
             <button class="btn-danger bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded disabled:opacity-50 disabled:cursor-not-allowed transition duration-300 text-sm">Excluir</button>
           </div>
           <div class="tema-row flex items-center space-x-2">
-            <input type="text"class="tema tema-input flex-1 p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700"placeholder="Informe um tema de jogo..."/><button class="btn-danger bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded disabled:opacity-50 disabled:cursor-not-allowed transition duration-300 text-sm">Excluir</button>
+            <input type="text" id="temas2" class="tema tema-input flex-1 p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700"placeholder="Informe um tema de jogo..."/>
+            <button class="btn-danger bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded disabled:opacity-50 disabled:cursor-not-allowed transition duration-300 text-sm">Excluir</button>
           </div>
           <div class="tema-row flex items-center space-x-2">
-            <input type="text" class="tema tema-input flex-1 p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700"placeholder="Informe um tema de jogo..."/>
+            <input type="text" id="temas3" class="tema tema-input flex-1 p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700"placeholder="Informe um tema de jogo..."/>
             <button class="btn-danger bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded disabled:opacity-50 disabled:cursor-not-allowed transition duration-300 text-sm">Excluir</button>
           </div>
         </div>
@@ -54,7 +55,9 @@
         </div>
       </div>
 
-      <div id="jogo"class="jogo bg-white p-6 rounded-xl shadow-md border border-gray-200 mt-6 text-left hidden max-w-xl mx-auto">Carregando...</div>
+      <div id="jogo" class="jogo bg-white p-6 rounded-xl shadow-md border border-gray-200 mt-6 text-left hidden max-w-xl mx-auto">
+        Carregando...
+    </div>
     </div>
   </main>
 
